@@ -1,0 +1,1 @@
+import {NextResponse} from "next/server"; import {underwrite} from "../../../lib/underwriting"; export async function POST(req:Request){try{return NextResponse.json(underwrite(await req.json()))}catch{return NextResponse.json({error:"Invalid property payload"},{status:400})}}

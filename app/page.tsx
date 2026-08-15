@@ -1,0 +1,1 @@
+import DealForge from "./ui"; export default function Home(){return <DealForge/>}
